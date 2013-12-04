@@ -1,3 +1,9 @@
+INSTALLATION
+================
+
+1. Edit the makefile to make any necessary changes, should be fine for Linux. 
+2. At the prompt type 'make', install proxy where ever you see fit.
+
 INTRODUCTION 
 ==============
 Proxy is a C application that when run on a multi-homed host will forward all packets from source, to destination. Where source might be a system on the Internet, and destination might be a box on a private network behind a multi-homed Linux machine. The way I use it is to change the telnet port on a machine on my internal network from 23 to 999, then I'll run the proxy on the multi-homed box, and from the Internet, telnet to the multi-homed box on port 999 and it will automagically put me on the internal machine. The arguments to proxy when run on the multi-homed host would be:
